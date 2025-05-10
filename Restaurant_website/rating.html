@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG YELLOW DOOR - Rate Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function submitRating() {
+            const rating = document.querySelector('input[name="star"]:checked');
+            if (rating) {
+                alert(`Thank you for rating us ${rating.value} stars!`);
+            } else {
+                alert("Please select a rating before submitting.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>BIG YELLOW DOOR</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="rating.html">Rate Us</a>
+    </nav>
+
+    <section id="rating">
+        <h2>Rate Your Experience</h2>
+        <p>We value your feedback! Please rate us below:</p>
+
+        <div class="star-rating">
+            <input type="radio" id="star5" name="star" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="star" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="star" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="star" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="star" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+
+        <button onclick="submitRating()">Submit Rating</button>
+    </section>
+
+    <footer>
+        <p>Follow us on:<a href=https://www.instagram.com/bydcafe/?__pwa>Instagram</a>
+        <p>&copy; 2025 BIG YELLOW DOOR. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
