@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAMAEARTH STORE</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MAMAEARTH STORE</h1>
+        <div class="cart">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <div class="products">
+        <div class="product">
+            <img src="./ANTI HAIR FALL.avif" alt="MAMAEARTH ANTI HAIR FALL" width="300px">
+            <h2>MAMAEARTH ANTI HAIR FALL</h2>
+            <p>₹399</p>
+            <button onclick="addToCart('MAMAEARTH ANTI HAIR FALL', 399)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./FACE CREAM.avif" alt="MAMAEARTH FACE CREAM" width="300px">
+            <h2>MAMAEARTH FACE CREAM</h2>
+            <p>₹349</p>
+            <button onclick="addToCart('MAMAEARTH FACE CREAM', 349)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./FACESERUM.avif" alt="MAMAEARTH FACE SERUM" width="300px">
+            <h2>MAMAEARTH FACE SERUM</h2>
+            <p>₹249</p>
+            <button onclick="addToCart('MAMAEARTH FACE SERUM', 249)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./FACE SCRUB.avif" alt="MAMAEARTH FACE SCRUB" width="300px">
+            <h2>MAMAEARTH FACE SCRUB</h2>
+            <p>₹279</p>
+            <button onclick="addToCart('MAMAEARTH FACE SCRUB', 279)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./FACE WASH.avif" alt="MAMAEARTH FACE WASH" width="280px">
+            <h2>MAMAEARTH FACE WASH</h2>
+            <p>₹319</p>
+            <button onclick="addToCart('MAMAEARTH FACE WASH', 319)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./ONION SHAMPOO.avif" alt="MAMAEARTH ONION SHAMPOO" width="300px">
+            <h2>MAMAEARTH ONION SHAMPOO</h2>
+            <p>₹349</p>
+            <button onclick="addToCart('MAMAEARTH ONION SHAMPOO', 349)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./SUNSCREEM.jpeg" alt="MAMAEARTH SUN SCREEN" width="240px">
+            <h2>MAMAEARTH SUN SCREEN</h2>
+            <p>₹429</p>
+            <button onclick="addToCart('MAMAEARTH SUN SCREEN', 429)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <h2>Shopping Cart 🛒</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total:</strong> ₹ <span id="total-price">0.00</span></p>
+        <button onclick="goToCheckout()">Proceed to Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

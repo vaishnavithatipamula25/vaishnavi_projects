@@ -1,0 +1,30 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background:rgb(255, 255, 255);
+    color: rgb(68, 203, 56);
+    padding: 10px;
+    font-size: 25px;
+}
+
+.cart-container {
+    background: rgb(203, 219, 231);
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(122, 211, 234, 0.1);
+}
+
+button {
+    background: #195804;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
