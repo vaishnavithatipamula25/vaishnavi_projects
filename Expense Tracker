@@ -1,0 +1,30 @@
+class ExpenseTracker:
+    def __init__(self):
+        self.expenses = {}
+    def add_expense(self, category, amount):
+        if category in self.expenses:
+            self.expenses[category] += amount
+        else:
+            self.expenses[category] = amount
+    def display_summary(self):
+        print("\nExpense Summary:")
+        total_expense = 0
+        for category, amount in self.expenses.items():
+            print(f"{category}: ${amount:.2f}")
+            total_expense += amount
+        print(f"\nTotal Expenses: ${total_expense:.2f}")
+tracker = ExpenseTracker()
+while True:
+    print("\nEnter 'q' to quit.")
+    category = input("Enter the expense category (e.g., Food, Rent, Entertainment): ").strip()
+    if category.lower() == 'q':
+        break
+    amount = input(f"Enter the amount for {category}: ").strip()
+    if amount.lower() == 'q':
+        break
+    try:
+        amount = float(amount)
+        tracker.add_expense(category, amount)
+    except ValueError:
+        print("Please enter a valid number for the amount.")
+tracker.display_summary()
